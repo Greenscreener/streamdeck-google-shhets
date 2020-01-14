@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>eu.jakla.streamdeck-gs</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+<script>
+	class StreamDeckConn {
+		static DestinationEnum = Object.freeze({"HARDWARE_AND_SOFTWARE":0, "HARDWARE_ONLY":1, "SOFTWARE_ONLY":2});
+
+		constructor(port, pluginUUID, registerEvent, info) {
+			this.pluginUUID = pluginUUID;
+			this.websocket = new WebSocket("ws://127.0.0.1:" + port);
+			this.registerEvent = registerEvent;
+
+		}
+		registerPlugin() {
+			const json = {
+				"event": inRegisterEvent,
+				"uuid": inPluginUUID
+			};
+
+			websocket.send(JSON.stringify(json));
+		}
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+{
+  "Actions": [
+    {
+      "Icon": "incrementActionIcon", 
+      "Name": "Increment", 
+      "States": [
+        {
+          "Image": "incrementDefaultImage",
+          "TitleAlignment": "middle", 
+          "FontSize": "16"
+        }
+      ], 
+      "SupportedInMultiActions": false,
+      "Tooltip": "Increment a field in Google Sheets", 
+      "UUID": "eu.jakla.streamdeck-gs.increment"
+    },
+    {
+      "Icon": "decrementActionIcon", 
+      "Name": "Decrement", 
+      "States": [
+        {
+          "Image": "decrementDefaultImage",
+          "TitleAlignment": "middle", 
+          "FontSize": "16"
+        }
+      ], 
+      "SupportedInMultiActions": false,
+      "Tooltip": "Decrement a field in Google Sheets", 
+      "UUID": "eu.jakla.streamdeck-gs.decrement"
+    }
+  ], 
+  "SDKVersion": 2,
+  "Author": "Greenscreener", 
+  "CodePath": "code.html", 
+  "Description": "Interact with Google Sheets.", 
+  "Name": "GoogleSheets", 
+  "Icon": "pluginIcon", 
+  "URL": "https://github.com/Greenscreener/streamdeck-google-shhets", 
+  "Version": "1.4",
+  "OS": [
+    {
+        "Platform": "mac", 
+        "MinimumVersion" : "10.11"
+    },
+    {
+        "Platform": "windows", 
+        "MinimumVersion" : "10"
+    }
+  ],
+  "Software": 
+    {
+        "MinimumVersion" : "4.1"
+    }
